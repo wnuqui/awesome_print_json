@@ -4,14 +4,11 @@ This gem is a CLI application that can be used to pretty print JSON string.
 
 ## Installation
 
-If not using bundler, install via:
+There is already a gem of same name. To install, do the following:
 
-    $ gem install pj
-
-If via bundler, add `pj` in Gemfile.
-
-```ruby
-gem 'pj'
+```shell
+git clone git://github.com/wnuqui/pj.git && cd pj
+bundle && rake spec && rake clean clobber install:local
 ```
 
 ## Usage
