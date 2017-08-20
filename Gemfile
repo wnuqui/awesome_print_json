@@ -4,3 +4,10 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'awesome_print'
+
+group :test, :development do
+  gem 'pry'
+  gem 'vcr'
+  gem 'simplecov'
+  gem 'codeclimate-test-reporter', '~> 1.0.0'
+end
