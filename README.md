@@ -1,4 +1,4 @@
-# awesome_print_json
+# awesome_print_json [![Build Status](https://semaphoreci.com/api/v1/wnuqui/awesome_print_json/branches/master/badge.svg)](https://semaphoreci.com/wnuqui/awesome_print_json) <a href="https://codeclimate.com/github/wnuqui/awesome_print_json"><img src="https://codeclimate.com/github/wnuqui/awesome_print_json/badges/gpa.svg" /></a> <a href="https://codeclimate.com/github/wnuqui/awesome_print_json"><img src="https://codeclimate.com/github/wnuqui/awesome_print_json/badges/issue_count.svg" /></a> <a href="https://codeclimate.com/github/wnuqui/awesome_print_json/coverage"><img src="https://codeclimate.com/github/wnuqui/awesome_print_json/badges/coverage.svg" /></a>
 
 This gem is an [awesome_print](https://github.com/awesome-print/awesome_print) CLI wrapper that pretty-prints JSON data in terminal.
 
