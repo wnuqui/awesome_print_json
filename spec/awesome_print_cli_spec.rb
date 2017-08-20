@@ -1,12 +1,12 @@
 require 'spec_helper'
 
-RSpec.describe PJ::CLI do
+RSpec.describe AwesomePrintJson::CLI do
   let(:json) do
     { data: { title: 'Test'} }.to_json
   end
 
   subject do
-    capture(:stdout) { PJ::CLI.pretty_print_json }
+    capture(:stdout) { AwesomePrintJson::CLI.pretty_print_json }
   end
 
   describe '.pretty_print_json' do

@@ -1,20 +1,17 @@
-# pj
+# awesome_print_json
 
-This gem is a CLI application that can be used to pretty print JSON (via [awesome_print](https://github.com/awesome-print/awesome_print) gem).
+This gem is an [awesome_print](https://github.com/awesome-print/awesome_print) CLI wrapper that pretty-prints JSON data in terminal.
 
 ## Installation
 
-There is already a gem of same name. To install, do the following:
-
 ```shell
-git clone git://github.com/wnuqui/pj.git && cd pj
-bundle && rake spec && rake clean clobber install:local
+gem install awesome_print_json
 ```
 
 ## Usage
 
-    $ curl -s -X GET http://end.point | pj
-    $ echo "{\"data\":{\"title\":\"Test\"}}" | pj
+    $ curl -s -X GET http://end.point | print_json
+    $ echo "{\"data\":{\"title\":\"Test\"}}" | print_json
 
 ## Development
 
@@ -24,7 +21,15 @@ To install this gem onto your local machine, run `bundle exec rake install:local
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/wnuqui/pj. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/wnuqui/awesome_print_json. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+## Acknowledgements
+
+**awesome_print_json** is a simple, thin, CLI wrapper for [awesome_print](https://github.com/awesome-print/awesome_print) gem.
+
+## Similar gem
+
+[apj](https://rubygems.org/gems/apj) is a similar CLI gem. As a difference, **awesome_print_json** just rely on output being piped to it.
 
 
 ## License

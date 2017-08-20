@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'awesome_print_json/cli'
+
+AwesomePrintJson::CLI.pretty_print_json

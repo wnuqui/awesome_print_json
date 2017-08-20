@@ -1,5 +1,5 @@
 require 'bundler/setup'
-require 'pj/cli'
+require 'awesome_print_json/cli'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
