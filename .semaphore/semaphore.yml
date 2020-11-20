@@ -5,8 +5,14 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: bundle exec rspec
+  - name: Test
     task:
       jobs:
-        - name: bundle && bundle exec rake spec && CODECLIMATE_REPO_TOKEN=908e51d3bdd7659edee9fa1eae9126a399af4a2b69f1ef0eadfc7d2af82c2ba2 bundle exec codeclimate-test-reporter
-          commands: []
+        - name: Test
+          commands:
+            - checkout
+            - sem-version ruby 2.6.5
+            - cache restore
+            - bundle install --path vendor/bundle
+            - cache store
+            - bundle exec rspec
