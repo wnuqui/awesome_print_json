@@ -1,0 +1,12 @@
+version: v1.0
+name: Ruby
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: bundle exec rspec
+    task:
+      jobs:
+        - name: bundle && bundle exec rake spec && CODECLIMATE_REPO_TOKEN=908e51d3bdd7659edee9fa1eae9126a399af4a2b69f1ef0eadfc7d2af82c2ba2 bundle exec codeclimate-test-reporter
+          commands: []
