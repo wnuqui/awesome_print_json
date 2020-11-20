@@ -10,8 +10,16 @@ gem install awesome_print_json
 
 ## Usage
 
-    $ curl -s -X GET http://end.point | print_json
+    $ curl https://hacker-news.firebaseio.com/v0/item/192327.json --no-progress-meter | print_json
     $ echo "{\"data\":{\"title\":\"Test\"}}" | print_json
+
+## Screenshot
+
+Here is a sample output piping the `curl` output to `print_json`. `print_json` is the function that you can invoke in terminal once `awesome_print_json` gem is installed.
+
+<p align="center">
+  <img src="terminal-output.png">
+</p>
 
 ## Development
 
